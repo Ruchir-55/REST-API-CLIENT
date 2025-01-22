@@ -16,11 +16,16 @@
 
 The Weather App is a Java-based application that provides users with real-time weather information for a specified location. It fetches weather data from an external API and displays it in a graphical user interface (GUI). Users can enter a location, and the app retrieves and presents weather details, including temperature, weather condition, humidity, and wind speed. This documentation outlines the project's architecture, technologies used, and the functionality of each class within the application.
 
-HttpGet Request: We create an HttpGet request to send a GET request to the OpenWeatherMap API using the city name and API key.
+#*Class Summaries*#
+3.1. AppLauncher
+Description: The AppLauncher class serves as the entry point for the Weather App. It initializes the GUI and displays the main application window.
 
-HTTP Client Setup: We configure the HTTP client with timeouts and execute the request.
+3.2. WeatherAppGui
+Description: The WeatherAppGui class represents the graphical user interface (GUI) of the Weather App. It is responsible for displaying weather information for a specified location.
 
-JSON Parsing: The response is in JSON format. We use the Jackson library to parse the JSON and extract the relevant weather information (temperature, humidity, wind speed, etc.).
+Summary: This class handles the layout and display of GUI components, including text fields, labels, buttons, and images. It also implements the user interface for entering a location and updating the weather information based on user input.
 
-Structured Output: After parsing the response, the program outputs the weather details in a readable format.
+3.3. WeatherApp
+Description: The WeatherApp class contains the backend logic for fetching weather data from an external API. It retrieves geographic coordinates for a location, fetches weather data for that location, and provides methods to convert weather codes.
 
+Summary: This class encapsulates the core functionality of the Weather App. It includes methods to fetch weather data and location coordinates, convert weather codes into readable weather conditions, and manage API requests. This class acts as the bridge between the GUI and the external weather data source, ensuring that weather information is retrieved and displayed accurately.
