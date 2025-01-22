@@ -14,7 +14,8 @@
 
 *DESCRIPTION OF TASK PERFORMED* :
 
-Explanation of the Code
+The Weather App is a Java-based application that provides users with real-time weather information for a specified location. It fetches weather data from an external API and displays it in a graphical user interface (GUI). Users can enter a location, and the app retrieves and presents weather details, including temperature, weather condition, humidity, and wind speed. This documentation outlines the project's architecture, technologies used, and the functionality of each class within the application.
+
 HttpGet Request: We create an HttpGet request to send a GET request to the OpenWeatherMap API using the city name and API key.
 
 HTTP Client Setup: We configure the HTTP client with timeouts and execute the request.
